@@ -1,3 +1,4 @@
+// Principal
 const divAcumulado = document.getElementById('acumulado'),
 divNumeros = document.getElementById('numeros'),
 divOperador = document.querySelector('operador'),
