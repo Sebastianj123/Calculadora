@@ -78,50 +78,31 @@ body::before {
     position: relative;
     box-shadow: inset -2vw -2vw 10vw #0bf,
     inset -1vw -1vw 4vw #fff;
-/*    flex: 1;*/
 }
-
-/* .pantalla::before {
-    content: "";
-    background: #000;
-    opacity: .4;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 2vw;
-} */
-
-/* Los dos */
-/* .pantalla div {
-    text-align: right;
-} */
 
 
 /* acumulado */
 #acumulado {
-    background: #00f7;
     flex: 1;
     text-align: right;
-    text-justify:inherit;
+    padding: 1vw;
+    background-color: #0f07;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+
 }
 
-#numerosdiv {
-    background: #0f07;
-    flex: 1;
-    text-align: right;
-    font-size: 3vw;
-    display: grid;
-    grid-template-columns: 30% 70%;
-}
 
-#operador {
-    background-color: #f007;   
-    padding: .5vw 0 0 2vw;
-}
 
 #numeros {
-    padding: .5vw 2vw 0 0;
+    flex: 1;
+    text-align: right;
+    font-size: 2vw;
+}
 
+
+#numeros {
+    padding: 1vw;
 }
 
 
@@ -273,4 +254,15 @@ input:active,#eraser-1:active {
 
 .button:active {
     background: #f80 ;
+}
+
+.a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0007;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 30000;
 }
