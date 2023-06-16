@@ -79,11 +79,20 @@ window.addEventListener('click',function(dates) {
             // Si es un operador
             if (operador) {
 
-                // Seleccionamos el operador en caso de que sea un operador el selecto
-                let a = valor.match(expresionOperadores);
-                // acumulador = '';
-                acumulador += `${acumulador} ${numeros} ${a}`;
-                numeros = '';
+                if (numeros != '') {
+                
+                    // Seleccionamos el operador en caso de que sea un operador el selecto
+                    let a = valor.match(expresionOperadores);
+                    // acumulador = '';
+                    acumulador += `${acumulador} ${numeros} ${a}`;
+                    numeros = '';
+
+                } else {
+
+                    alert('Ingrese un valor antes de proceder');
+
+                }
+
 
             } else {
                 
